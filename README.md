@@ -30,7 +30,7 @@ This Project is part of the NAID Mobile App Internship hosted and managed by Spr
 - Dart
 
 ## Prerequisites
-A good Understanding of `Java`, `OOP`  and one of its GUI Components (Android Studio)\
+A good Understanding of `Java`, `OOP`, `dart`  and one of its GUI Components (Android Studio)\
 However, you can apply the concepts of the projects with any other prefered programming language.
 
 
