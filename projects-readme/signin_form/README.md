@@ -10,7 +10,12 @@
 
 # 02 Sign in Form
 
-This is the second lab which implements login layout using flutter. 
+This is the second lab which implements login layout using flutter.
+
+> The whole work is done in the main.dart folder 
+ 
+> TODO: In the upcoming implementations i will change the main.dart to act as a host page to all upcoming labs implementations
+> I will make buttons to navigate through the app to the tasks implementations with separate screens directory for each task.
 
  <p align="center">
   <img src="images/login.jpg" width="300" />
