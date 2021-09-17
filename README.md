@@ -9,6 +9,10 @@
 </p>
  
 
+## Home Page Host Projects Navigation
+<p align="center">
+  <img src="images/home_page.png" width="300" />
+</p>
 
 ## Projects List
 
