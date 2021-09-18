@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sprints_naid_flutter/projects/layout_exercise/screens/cardview1.dart';
 import 'package:sprints_naid_flutter/projects/sign_in_form/screens/sign_in.dart';
+
+
 
 void main() {
   runApp(const MaterialApp(debugShowCheckedModeBanner: false,
@@ -91,7 +94,7 @@ class HomePage  extends StatelessWidget{
                     minWidth: double.infinity,
                     height: 40,
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const LoginPage()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const CardView()));
                     },
                     color: const Color(0xff0095FF),
                     shape: RoundedRectangleBorder(
