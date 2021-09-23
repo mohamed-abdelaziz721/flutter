@@ -24,6 +24,16 @@
   <img src="images/sharedpref2.jpg" width="300" />   
 </p>
 
+## Files Added
+ - lib -> `home_page.dart`.
+ - lib -> `themes.dart`.
+ - lib -> page_navigation -> [model - screens - utils - widgets].
+ - lib -> page_navigation -> model -> `user.dart`.
+ - lib -> page_navigation -> screens -> `profile_page.dart` & `edit_profile_page.dart`. 
+ - lib -> page_navigation -> utils -> `user_prefrences.dart`.
+ - lib -> page_navigation -> widgets -> `appbar_widget.dart`, `button_widget.dart`, `numbers_widget.dart`, `profile_widget.dart`, & `textfield_widget.dart`.
+
+
 ## What has been done 
 - Profile page contain fields: 
     - Image
