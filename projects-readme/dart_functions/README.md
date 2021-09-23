@@ -67,6 +67,28 @@ print('The largest number is $largest');
 }
 ```
 
+## Edited Problem 2 (The largest of Three Numbers)
+### Reason to Edit
+> To find the greatest we need to look at exactly 3 intgers. using nested if looks at 6 intgers with 3 comparisons. The method below looks at 3 integers with only 2 comparisons.
+
+```dart
+import 'dart:math';
+
+void main() {
+  
+int num1 = 10;
+int num2 = 14;
+int num3 = 50;
+
+int largest = max(num1, num2);
+largest = max(largest, num3);
+  
+print('The largest number is $largest');
+}
+```
+
+
+
 > 3. Program take a word and return number of repeated characters
 ```dart
 void main(List<String> args) {
