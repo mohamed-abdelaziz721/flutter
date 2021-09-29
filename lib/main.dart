@@ -19,7 +19,6 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
-  static const String title = 'Sprints_NAID_Flutter';
 
   const MyApp({Key? key}) : super(key: key);
 
@@ -33,7 +32,7 @@ class MyApp extends StatelessWidget {
         builder: (context) => MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeProvider.of(context),
-          title: title,
+          title: 'Sprints_NAID_Flutter',
           home: const HomePage(),
         ),
       ),
