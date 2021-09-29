@@ -20,6 +20,7 @@
 | 02 |          [Signin Form](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/signin_form)          |    :heavy_check_mark:    |
 | 03 |          [Layout Exercise](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/layout_exercise)              |    :heavy_check_mark:   
 | 04 |          [Page Navigation](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/page_navigation)              |   :heavy_check_mark:     |
+| 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/http_api)              |   :heavy_check_mark:     |
 
 
 # 01 - Dart Functions
@@ -140,7 +141,7 @@ This Project is part of the NAID Mobile App Internship hosted and managed by Spr
 - Dart
 
 ## Prerequisites
-A good Understanding of `Java`, `OOP`  and one of its GUI Components (Android Studio)\
+A good Understanding of `Java`, `OOP`, `Dart`  and one of its GUI Components (Android Studio)\
 However, you can apply the concepts of the projects with any other prefered programming language.
 
 

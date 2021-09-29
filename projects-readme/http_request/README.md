@@ -9,18 +9,35 @@
 </p>
 
  
-## Layout Exercise
+## Http Request
+
+## Http Request
 <p align="center">
-  <img src="images/cv1.png" width="300" />
-  <img src="images/cv2.png" width="300" />
+  <img src="images/http.gif" width="300" />
+</p>
+
+<p align="center">
+  <img src="images/details.png" width="300" />
+  <img src="images/users.png" width="300" />
+  <img src="images/tap.png" width="300" />
 </p>
 
 ### What has been Done! 
-- cardview1.dart
-- h_v_cardviews1.dart
+ Added button in the Home Screen for the http task.\
 
-The above files was added in `projects -> layout_excersice -> screens`.
-They contain a landing page for cardviews and the button navigates to a new page that contain horizontal and vertical cards.
+
+- user_details.dart
+- user_screen.dart \
+  The above files were added in `projects -> http_api -> screens`.
+- user.dart\
+  The above file was added in `projects -> http_api -> model`.
+- user_service.dart\
+  The above files was added in `projects -> http_api -> services`.
+
+They contain a landing page with cardview which act as a placeholder for users details. The button in the `user_details.dart` page generate the http request to get users from 
+an API.\
+When tapping on any user its corresponding details will be passed to the placeholder page along with screen being popped from the stack
+and re-routed to the placeholder page.
 
 
 

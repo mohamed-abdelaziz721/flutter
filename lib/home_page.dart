@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sprints_naid_flutter/projects/http_api/screens/user_details.dart';
+import 'package:sprints_naid_flutter/projects/http_api/screens/user_screen.dart';
 import 'package:sprints_naid_flutter/projects/layout_exercise/screens/cardview1.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/screens/profile_page.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/utils/user_preferences.dart';
@@ -141,6 +143,27 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(50)),
                         child: const Text(
                           "3. Page Navigation",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 18),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      MaterialButton(
+                        minWidth: double.infinity,
+                        height: 40,
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => UserDetails()));
+                        },
+                        color: const Color(0xff0095FF),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50)),
+                        child: const Text(
+                          "4. HTTP Request from an API",
                           style: TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.w600,
