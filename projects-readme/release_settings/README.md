@@ -10,43 +10,24 @@
  
 
 
-# Page Navigation & Shared Preference Plugin
-
-
-
-<p align="center">
-  <img src="images/shared_pref.gif" width="300" />
-</p>
-
+# Release Settings
+There is not much to show here as there is no logic added.
 
 <p align="center">
-  <img src="images/sharedpref1.jpg" width="300" />
-  <img src="images/sharedpref2.jpg" width="300" />   
+  <img src="images/naid_icon.png" width="200" />
+  <img src="images/apk.png" width="200" />   
 </p>
-
-## Files Added
- - lib -> `home_page.dart`.
- - lib -> `themes.dart`.
- - lib -> page_navigation -> [model - screens - utils - widgets].
- - lib -> page_navigation -> model -> `user.dart`.
- - lib -> page_navigation -> screens -> `profile_page.dart` & `edit_profile_page.dart`. 
- - lib -> page_navigation -> utils -> `user_prefrences.dart`.
- - lib -> page_navigation -> widgets -> `appbar_widget.dart`, `button_widget.dart`, `numbers_widget.dart`, `profile_widget.dart`, & `textfield_widget.dart`.
 
 
 ## What has been done 
-- Profile page contain fields: 
-    - Image
-    - Name & Email
-    - Button
-    - About 
-The profile page is build to test the shared preference plugin usage when editing the content of the profile page in Edit page which contain all the previously mentioned fields.
+- Added Release settings
+    - Changed app icon to naid logo.
+    - changed package name to `com.sprints.sprints_naid_flutter` instead of using `com.example....`
+    - Key Added in the root directory with name: `upload-keystore.jks`
+    - Apk created in  `build\app\outputs\flutter-apk\app-release.apk`
 
-> The image on the left is the starting page with all field preallocated.
 
-> The image on the right show edited **Name** & **Image**. The edits remain saved after app reopening as shown in the GIF above.
 
-> DARK MODE Switch preference also saved along with all the user data.
 
 
 ## Projects List
@@ -59,7 +40,6 @@ The profile page is build to test the shared preference plugin usage when editin
 | 04 |          [Page Navigation](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/page_navigation)              |   :heavy_check_mark:    |
 | 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/http_request)              |   :heavy_check_mark:     |
 | 06 |          [Release Settings](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/release_settings)              |   :heavy_check_mark:     |
-
 
 
 ## About the Project

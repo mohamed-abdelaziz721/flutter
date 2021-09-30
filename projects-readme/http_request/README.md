@@ -49,7 +49,9 @@ and re-routed to the placeholder page.
 | 02 |          [Signin Form](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/signin_form)          |    :heavy_check_mark:    |
 | 03 |          [Layout Exercise](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/layout_exercise)              |    :heavy_check_mark:  
 | 04 |          [Page Navigation](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/page_navigation)              |   :heavy_check_mark:   |
-| 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/dev/projects-readme/http_request)              |   :heavy_check_mark:     |
+| 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/http_request)              |   :heavy_check_mark:     |
+| 06 |          [Release Settings](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/release_settings)              |   :heavy_check_mark:     |
+
 ## About the Project
 
 This Project is part of the NAID Mobile App Internship hosted and managed by Sprints concerning Flutter. 
@@ -61,7 +63,7 @@ This Project is part of the NAID Mobile App Internship hosted and managed by Spr
 
 ## Prerequisites
 A good Understanding of `Java`, `OOP`, `Dart`  and one of its GUI Components (Android Studio)\
-However, you can apply the concepts of the projects with any other prefered programming language.
+However, you can apply the concepts of the projects with any other preferred programming language.
 
 
 
