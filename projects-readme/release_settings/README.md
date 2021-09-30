@@ -15,7 +15,7 @@ There is not much to show here as there is no logic added.
 
 <p align="center">
   <img src="images/naid_icon.png" width="200" />
-  <img src="images/apk.png" width="200", height="100" />   
+  <img src="images/apk.png"  height="200" />   
 </p>
 
 
