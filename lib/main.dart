@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:sprints_naid_flutter/bottom_navbar.dart';
 import 'package:sprints_naid_flutter/home_page.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/utils/user_preferences.dart';
 import 'package:sprints_naid_flutter/themes.dart';
@@ -19,6 +20,7 @@ Future main() async {
 }
 
 class MyApp extends StatelessWidget {
+  static const String title = 'Sprints_NAID_Flutter';
 
   const MyApp({Key? key}) : super(key: key);
 
@@ -32,8 +34,8 @@ class MyApp extends StatelessWidget {
         builder: (context) => MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeProvider.of(context),
-          title: 'Sprints_NAID_Flutter',
-          home: const HomePage(),
+          title: title,
+          home:  BottomNavBar(),
         ),
       ),
     );

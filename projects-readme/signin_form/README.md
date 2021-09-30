@@ -1,6 +1,6 @@
 # Sprints-NAID-Flutter
 
- This repositery show my implementations of  flutter projects with Sprints and NAID.
+ This repository show my implementations of  flutter projects with Sprints and NAID.
 
 <p align="center">
   <img src="images/naid.png" width="100" />
@@ -32,6 +32,7 @@ This is the second lab which implements login layout using flutter.
 | 04 |          [Page Navigation](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/page_navigation)              |   :heavy_check_mark:    |
 | 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/http_request)              |   :heavy_check_mark:     |
 | 06 |          [Release Settings](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/release_settings)              |   :heavy_check_mark:     |
+| 07 |          [Bottom Navigation Bar & Links](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/bottom_navbar)              |   :heavy_check_mark:     |
 
 ## About the Project
 

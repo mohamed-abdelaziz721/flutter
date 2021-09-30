@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sprints_naid_flutter/projects/http_api/screens/user_screen.dart';
+import 'package:sprints_naid_flutter/projects/http_api/utils.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/widgets/appbar_widget.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/widgets/button_widget.dart';
@@ -23,6 +24,8 @@ class _UserDetailsState extends State<UserDetails> {
     String email = data.isEmpty? "email.placeholder@gmail.com" : data['Email'] ;
     String city = data.isEmpty? "City" : data['City'];
     String company = data.isEmpty? "Company" :  data['Company'] ;
+    String phone = data.isEmpty? "+20 15 525 16 133" :  data['Phone'] ;
+    String website = data.isEmpty? "www.placeholder.com" :  data['Website'] ;
 
 
 
@@ -45,9 +48,7 @@ class _UserDetailsState extends State<UserDetails> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children:  <Widget>[
-                        const SizedBox(
-                          height: 5,
-                        ),
+                        const SizedBox(height: 5,),
                         const Icon(Icons.account_circle_outlined),
                         ListTile(
                           title: Row(
@@ -61,7 +62,12 @@ class _UserDetailsState extends State<UserDetails> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               const Icon(Icons.email, size: 15,),
-                              Text(email,),
+                              InkWell(
+                                onTap: (){
+                                  launchURL("mailto:${email}?subject=NAID-Sprints&body=Flutter Launch_URL Trial");
+                                } ,
+                                  child: Text(email,)
+                              ),
                             ],
                           ),
                         ),
@@ -78,6 +84,30 @@ class _UserDetailsState extends State<UserDetails> {
                             children: [
                               const Icon(Icons.location_on_sharp, size: 15,),
                               Text(city,),
+                            ],
+                          ),
+                        ),
+                        ListTile(
+                          title: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.phone_android, size: 15,),
+                              InkWell(
+                                  onTap: (){
+                                    launchURL("tel:${phone}");
+                                  },
+                                  child: Text(phone,)),
+                            ],
+                          ),
+                          subtitle: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.web, size: 15,),
+                              InkWell(
+                                onTap: (){
+                                  launchURL("http://${website}");
+                                },
+                                  child: Text(website,)),
                             ],
                           ),
                         ),
@@ -114,6 +144,8 @@ class _UserDetailsState extends State<UserDetails> {
                       'Email': result['Email'],
                       'City': result['City'],
                       'Company': result['Company'],
+                      'Phone': result['Phone'],
+                      'Website': result['Website'],
                     };
                   });
 

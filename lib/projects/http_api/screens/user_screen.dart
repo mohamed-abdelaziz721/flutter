@@ -36,6 +36,9 @@ class _UserScreenState extends State<UserScreen> {
       'Email':instance.email,
       'City':instance.address.city,
       'Company':instance.company.name,
+      'Phone': instance.phone,
+      'Website': instance.website,
+
     }
     );
 
