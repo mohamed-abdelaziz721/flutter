@@ -9,9 +9,9 @@
 </p>
 
  
-## Http Request
 
-## Http Request
+
+## Links & Bottom Navigation Bar
 <p align="center">
   <img src="images/navbar.gif" width="300" />
 </p>
