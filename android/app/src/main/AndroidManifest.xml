@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sprints_naid_flutter">
+    package="com.sprints.sprints_naid_flutter">
    <application
         android:label="sprints_naid_flutter"
         android:icon="@mipmap/ic_launcher">
