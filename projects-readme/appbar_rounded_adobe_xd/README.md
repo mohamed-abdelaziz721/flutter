@@ -9,18 +9,27 @@
 </p>
 
  
-## Layout Exercise
+
+## Rounded Appbar - Adobe XD
 <p align="center">
-  <img src="images/cv1.png" width="300" />
-  <img src="images/cv2.png" width="300" />
+  <img src="images/appBar1.gif" width="300" />
 </p>
 
-### What has been Done! 
-- cardview1.dart
-- h_v_cardviews1.dart
 
-The above files was added in `projects -> layout_excersice -> screens`.
-They contain a landing page for cardviews and the button navigates to a new page that contain horizontal and vertical cards.
+<p align="center">
+  <img src="images/adobeXD.gif" width="500" />
+</p>
+
+
+### What has been Done! 
+- Changed App icon to rounded shape.
+  
+- Changed The app bar from transparent to blue grey color with round corners.
+    - `lib->projects->page_navigation->widgets->appbar_widget.dart`\
+  `I will leave it transparent as it is more aesthetic above gif demo show the adjustment`
+  
+- Finished Adobe XD Design with navigation between screens. `See the Gif above`
+
 
 
 
@@ -36,6 +45,7 @@ They contain a landing page for cardviews and the button navigates to a new page
 | 06 |          [Release Settings](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/release_settings)              |   :heavy_check_mark:     |
 | 07 |          [Bottom Navigation Bar & Links](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/bottom_navbar)              |   :heavy_check_mark:     |
 | 08 |          [Rounded Appbar - Adobe XD](https://github.com/mohamed-abdelaziz721/flutter/tree/dev/projects-readme/appbar_rounded_adobe_xd)              |   :heavy_check_mark:     |
+
 
 ## About the Project
 

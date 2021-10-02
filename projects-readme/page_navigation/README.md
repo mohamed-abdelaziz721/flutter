@@ -60,6 +60,8 @@ The profile page is build to test the shared preference plugin usage when editin
 | 05 |          [Http Request](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/http_request)              |   :heavy_check_mark:     |
 | 06 |          [Release Settings](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/release_settings)              |   :heavy_check_mark:     |
 | 07 |          [Bottom Navigation Bar & Links](https://github.com/mohamed-abdelaziz721/flutter/tree/master/projects-readme/bottom_navbar)              |   :heavy_check_mark:     |
+| 08 |          [Rounded Appbar - Adobe XD](https://github.com/mohamed-abdelaziz721/flutter/tree/dev/projects-readme/appbar_rounded_adobe_xd)              |   :heavy_check_mark:     |
+
 
 ## About the Project
 
