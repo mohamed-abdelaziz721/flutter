@@ -12,7 +12,7 @@
 
 ## Rounded Appbar - Adobe XD
 <p align="center">
-  <img src="images/appbar1.gif" width="300" />
+  <img src="images/appBar1.gif" width="300" />
 </p>
 
 
