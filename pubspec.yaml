@@ -57,7 +57,7 @@ dev_dependencies:
   flutter_launcher_icons: ^0.9.2
 
 flutter_icons:
-  image_path: "assets/naid.png"
+  image_path: "assets/naid_circle.png"
   android: true
   ios: true
 
@@ -92,6 +92,7 @@ flutter:
     - assets/welcome.png
     - assets/sprints.png
     - assets/naid.png
+    - assets/naid_circle.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

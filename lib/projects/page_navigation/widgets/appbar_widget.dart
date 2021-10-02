@@ -14,6 +14,11 @@ AppBar buildAppBar(BuildContext context) {
     foregroundColor: Colors.blueAccent,
     backgroundColor: Colors.transparent,
     elevation: 0,
+    // shape: RoundedRectangleBorder(
+    //   borderRadius: BorderRadius.vertical(
+    //     bottom: Radius.circular(30),
+    //   ),
+    // ),
     actions: [
       ThemeSwitcher(
         builder: (context) => IconButton(
