@@ -12,7 +12,12 @@ AppBar buildAppBar(BuildContext context) {
   return AppBar(
     leading: const BackButton(),
     foregroundColor: Colors.blueAccent,
-    backgroundColor: Colors.transparent,
+    backgroundColor: Colors.blueGrey,
+    shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(30),
+      ),
+    ),
     elevation: 0,
     actions: [
       ThemeSwitcher(
