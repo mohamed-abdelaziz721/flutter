@@ -68,8 +68,11 @@ class _UserScreenState extends State<UserScreen> {
                             trailing: const Icon(Icons.people)),
                       );
                     },
-                  )),
+                  )
+        ),
       ),
     );
   }
 }
+
+

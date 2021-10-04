@@ -2,14 +2,16 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sprints_naid_flutter/bottom_navbar.dart';
 import 'package:sprints_naid_flutter/projects/http_api/screens/user_details.dart';
-import 'package:sprints_naid_flutter/projects/http_api/screens/user_screen.dart';
 import 'package:sprints_naid_flutter/projects/layout_exercise/screens/cardview1.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/screens/profile_page.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/utils/user_preferences.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/widgets/appbar_widget.dart';
 import 'package:sprints_naid_flutter/projects/sign_in_form/screens/sign_in.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
-import 'package:sprints_naid_flutter/projects/page_navigation/model/user.dart';
+import 'package:sprints_naid_flutter/projects/youtube_api/screens/grade_selection.dart';
+import 'package:sprints_naid_flutter/projects/youtube_api/screens/youtube_api.dart';
+
+
 
 
 class HomePage extends StatefulWidget {
@@ -186,6 +188,26 @@ class _HomePageState extends State<HomePage> {
                               borderRadius: BorderRadius.circular(50)),
                           child: const Text(
                             "5. Bottom Navigation Bar",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18),
+                          ),
+                        ),
+                        MaterialButton(
+                          minWidth: double.infinity,
+                          height: 30,
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Grade_Selection()));
+                          },
+                          color: const Color(0xff0095FF),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(50)),
+                          child: const Text(
+                            "6. Youtube API",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600,
