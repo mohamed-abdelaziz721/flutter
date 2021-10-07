@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/models/channel_model.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/models/video_model.dart';
+import 'package:sprints_naid_flutter/projects/youtube_api/screens/try.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/screens/video_screen.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/services/api_service.dart';
 
@@ -31,6 +32,7 @@ class _Youtube_APIState extends State<Youtube_API> {
   // PyVJEBD7Di1YYjTdS2v8g
   // UC6Dy0rQ6zDnQuHQ1EeErGUA
   _initChannel() async {
+    _isLoading=  true;
     // String Playlist_ID= widget.Playlist_ID;
     // String Channel_ID= widget.Channel_ID;
     Channel channel = await APIService.instance
@@ -38,6 +40,7 @@ class _Youtube_APIState extends State<Youtube_API> {
     setState(() {
       _channel = channel;
     });
+    _isLoading = false;
   }
 
 
@@ -159,8 +162,8 @@ class _Youtube_APIState extends State<Youtube_API> {
       appBar: AppBar(
         title: Text('YouTube Channel'),
       ),
-      body:
-          _channel != null
+      body: _isLoading == false
+          // _channel != null
           ? NotificationListener<ScrollNotification>(
               onNotification: (ScrollNotification scrollDetails) {
                 if (!_isLoading &&

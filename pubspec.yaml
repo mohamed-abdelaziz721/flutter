@@ -38,7 +38,11 @@ dependencies:
   path_provider: ^2.0.5
   url_launcher: ^6.0.12
   youtube_player_flutter: ^8.0.0
-#  youtube_explode_dart: ^1.10.7+1
+  highlight_text: ^1.2.0
+  speech_to_text: ^5.1.1
+  avatar_glow: ^2.0.1
+  youtube_explode_dart: ^1.10.8
+
 
 
 
