@@ -119,7 +119,7 @@ class _GP_HomeState extends State<GP_Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50)),
                           child: const Text(
-                            "Speech to Text (need merge from ahmed)",
+                            "Speech to Text ",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600,

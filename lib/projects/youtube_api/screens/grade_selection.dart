@@ -167,6 +167,50 @@ class _Grade_SelectionState extends State<Grade_Selection> {
                             fontSize: 25),
                       ),
                     ),
+                    const SizedBox(height: 10),
+                    MaterialButton(
+                      minWidth: double.infinity,
+                      height: 40,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Youtube_API(Channel_ID: 'UCRaC_9WVNkT7D4XJrK713Mw', Playlist_ID:'PLii5rkhsE0LdtTknIAU8v6L1AO5A2l8pE')));
+                      },
+                      color: const Color(0xff0095FF),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      child: const Text(
+                        "KID VOCABULARY",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 25),
+                      ),
+                    ),
+
+
+                    MaterialButton(
+                      minWidth: double.infinity,
+                      height: 40,
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Youtube_API(Channel_ID: 'UCRaC_9WVNkT7D4XJrK713Mw', Playlist_ID:'PLii5rkhsE0LdtTknIAU8v6L1AO5A2l8pE')));
+                      },
+                      color: const Color(0xff0095FF),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      child: const Text(
+                        "KID VOCABULARY",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 25),
+                      ),
+                    ),
+
 
 
                   ],

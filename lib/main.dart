@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeProvider.of(context),
           title: title,
           // home:  GP_Home(),
-          home:  HomePage(),
+          home:  GP_Home(),
         ),
       ),
     );
