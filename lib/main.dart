@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sprints_naid_flutter/bottom_navbar.dart';
 import 'package:sprints_naid_flutter/gp_home.dart';
-import 'package:sprints_naid_flutter/home_page.dart';
 import 'package:sprints_naid_flutter/projects/page_navigation/utils/user_preferences.dart';
 import 'package:sprints_naid_flutter/themes.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';

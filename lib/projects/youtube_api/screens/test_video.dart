@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/models/channel_model.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/models/video_model.dart';
-import 'package:sprints_naid_flutter/projects/youtube_api/screens/try.dart';
+import 'package:sprints_naid_flutter/projects/youtube_api/screens/video_caption_gif.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/screens/video_screen.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/services/api_service.dart';
 
-class Youtube_API extends StatefulWidget {
+class Test_Video extends StatefulWidget {
   final String Channel_ID;
   final String Playlist_ID;
-  Youtube_API({Key? key, required this.Channel_ID, required this.Playlist_ID}) : super(key: key);
+  Test_Video({Key? key, required this.Channel_ID, required this.Playlist_ID}) : super(key: key);
 
   @override
-  _Youtube_APIState createState() => _Youtube_APIState();
+  _Test_VideoState createState() => _Test_VideoState();
 }
 
-class _Youtube_APIState extends State<Youtube_API> {
+class _Test_VideoState extends State<Test_Video> {
 
   late Channel _channel ;
   bool _isLoading = false;
@@ -96,7 +96,8 @@ class _Youtube_APIState extends State<Youtube_API> {
       onTap: () => Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (_) => VideoScreen(id: video.id),
+          // builder: (_) => VideoScreen(id: 'FHaObkHEkHQ'),
+          builder: (_) => VideoCaptionGIF(id: 'FHaObkHEkHQ'),
         ),
       ),
       child: Container(
@@ -135,17 +136,6 @@ class _Youtube_APIState extends State<Youtube_API> {
     );
   }
 
-  _loadMoreVideos() async {
-    _isLoading = true;
-    List<Video> moreVideos = await APIService.instance
-        .fetchVideosFromPlaylist(playlistId: widget.Playlist_ID);
-    List<Video> allVideos = _channel.videos..addAll(moreVideos);
-    setState(() {
-      _channel.videos = allVideos;
-    });
-    _isLoading = false;
-
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -155,35 +145,34 @@ class _Youtube_APIState extends State<Youtube_API> {
         title: Text('YouTube Channel'),
       ),
       body: _isLoading == false
-          // _channel != null
           ? NotificationListener<ScrollNotification>(
-              onNotification: (ScrollNotification scrollDetails) {
-                if (!_isLoading &&
-                    _channel.videos.length != int.parse(_channel.videoCount) &&
-                    scrollDetails.metrics.pixels ==
-                        scrollDetails.metrics.maxScrollExtent) {
-                  _loadMoreVideos();
-                }
-                return false;
-              },
-              child: ListView.builder(
-                itemCount: 1 + _channel.videos.length,
-                itemBuilder: (BuildContext context, int index) {
-                  if (index == 0) {
-                    return _buildProfileInfo();
-                  }
-                  Video video = _channel.videos[index - 1];
-                  return _buildVideo(video);
-                },
-              ),
-            )
+        onNotification: (ScrollNotification scrollDetails) {
+          if (!_isLoading &&
+              _channel.videos.length != int.parse(_channel.videoCount) &&
+              scrollDetails.metrics.pixels ==
+                  scrollDetails.metrics.maxScrollExtent) {
+          }
+          return false;
+        },
+
+        child: ListView.builder(
+          itemCount: 2 ,
+          itemBuilder: (BuildContext context, int index) {
+            if (index == 0) {
+              return _buildProfileInfo();
+            }
+            Video video = Video(id: 'FHaObkHEkHQ', channelTitle: 'Kiddos World TV', title: 'Kids vocabulary - Family - family members & tree - Learn English educational video for kids', thumbnailUrl: 'https://i.ytimg.com/vi/FHaObkHEkHQ/maxresdefault.jpg');
+            return _buildVideo(video);
+          },
+        ),
+      )
           : Center(
-              child: CircularProgressIndicator(
-                valueColor: AlwaysStoppedAnimation<Color>(
-                  Theme.of(context).primaryColor, // Red
-                ),
-              ),
-            ),
+        child: CircularProgressIndicator(
+          valueColor: AlwaysStoppedAnimation<Color>(
+            Theme.of(context).primaryColor, // Red
+          ),
+        ),
+      ),
     );
   }
 }

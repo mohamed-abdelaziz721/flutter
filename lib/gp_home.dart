@@ -98,7 +98,7 @@ class _GP_HomeState extends State<GP_Home> {
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50)),
                           child: const Text(
-                            "Youtube API",
+                            "Youtube Lessons",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600,
@@ -113,13 +113,13 @@ class _GP_HomeState extends State<GP_Home> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SpeechScreen()));
+                                    builder: (context) => AudioScreen()));
                           },
                           color: const Color(0xff0095FF),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(50)),
                           child: const Text(
-                            "Speech to Text ",
+                            "Speech to Text",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w600,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sprints_naid_flutter/projects/youtube_api/screens/test_video.dart';
 import 'package:sprints_naid_flutter/projects/youtube_api/screens/youtube_api.dart';
 
 
@@ -62,49 +63,7 @@ class _Grade_SelectionState extends State<Grade_Selection> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     // the login button
-                    MaterialButton(
-                      minWidth: double.infinity,
-                      height: 40,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  Youtube_API(Channel_ID: 'UCfPyVJEBD7Di1YYjTdS2v8g', Playlist_ID:'PLNmq_T1B9ljJcradU4Xhec5nU52cB_klf')));
-                      },
-                      color: const Color(0xff0095FF),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      child: const Text(
-                        "Grade One",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 25),
-                      ),
-                    ),
-                    // creating the signup button
-                    const SizedBox(height: 10),
-                    MaterialButton(
-                      minWidth: double.infinity,
-                      height: 40,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>  Youtube_API(Channel_ID: 'UCfPyVJEBD7Di1YYjTdS2v8g', Playlist_ID:'PLNmq_T1B9ljIg4yu14mzNas7hvwM5aZ2l')));
-                      },
-                      color: const Color(0xff0095FF),
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(50)),
-                      child: const Text(
-                        "Grade Two",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.w600,
-                            fontSize: 25),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
+
                     MaterialButton(
                       minWidth: double.infinity,
                       height: 40,
@@ -188,8 +147,7 @@ class _Grade_SelectionState extends State<Grade_Selection> {
                             fontSize: 25),
                       ),
                     ),
-
-
+                    const SizedBox(height: 10),
                     MaterialButton(
                       minWidth: double.infinity,
                       height: 40,
@@ -197,13 +155,13 @@ class _Grade_SelectionState extends State<Grade_Selection> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => Youtube_API(Channel_ID: 'UCRaC_9WVNkT7D4XJrK713Mw', Playlist_ID:'PLii5rkhsE0LdtTknIAU8v6L1AO5A2l8pE')));
+                                builder: (context) => Test_Video(Channel_ID: 'UCRaC_9WVNkT7D4XJrK713Mw', Playlist_ID:'PLii5rkhsE0LdtTknIAU8v6L1AO5A2l8pE')));
                       },
                       color: const Color(0xff0095FF),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
                       child: const Text(
-                        "KID VOCABULARY",
+                        "Test Video",
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w600,
