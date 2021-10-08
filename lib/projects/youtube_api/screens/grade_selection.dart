@@ -37,26 +37,13 @@ class _Grade_SelectionState extends State<Grade_Selection> {
                 Column(
                   children: <Widget>[
                     const Text(
-                      "Welcome",
+                      "Choose Your Topic",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
                       ),
                     ),
-                    const SizedBox(
-                      height: 5,
-                    ),
-                    Text(
-                      "Choose Your Topic",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.grey[700],
-                        fontSize: 25,
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 20,
-                    )
+                    const SizedBox(height: 20,)
                   ],
                 ),
                 Column(

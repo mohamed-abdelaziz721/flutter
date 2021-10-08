@@ -34,7 +34,7 @@ class _VideoScreenState extends State<VideoScreen> {
         // if (i == text.length) break; // one track is five text lines
         if (i == text.length) break; // one track is five text lines
     }
-    print(text);
+    // print(text);
     yt.close();
     setState(() {}); //add because of the use of async so when data is updated setState is called to build listview with actual data.
   }
@@ -69,24 +69,8 @@ class _VideoScreenState extends State<VideoScreen> {
               print('Player is ready.');
             },
           ),
-          const SizedBox(height: 5),
-          MaterialButton(
-            minWidth: double.infinity,
-            height: 30,
-            onPressed: () {
-              getCaption(widget.id);
-            },
-            color: const Color(0xff0095FF),
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-            child: const Text(
-              "Show Video Caption",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18),
-            ),
-          ),
+          const SizedBox(height: 15),
+
 
 
           Container(

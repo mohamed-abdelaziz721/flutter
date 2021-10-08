@@ -46,24 +46,27 @@ class _GP_HomeState extends State<GP_Home> {
                           "Welcome",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 20,
+                            fontSize: 30,
                           ),
                         ),
                         const SizedBox(
                           height: 5,
                         ),
                         Text(
-                          "Flutter Projects managed by NAID  & Sprints ",
+                          "HEARU Flutter Final Project managed by NAID  & Sprints",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: Colors.grey[700],
-                            fontSize: 15,
+                            fontSize: 20,
                           ),
                         ),
                         const SizedBox(
                           height: 5,
                         )
                       ],
+                    ),
+                    const SizedBox(
+                      height: 5,
                     ),
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -81,13 +84,14 @@ class _GP_HomeState extends State<GP_Home> {
                         const SizedBox(height: 5)
                       ],
                     ),
+                    const SizedBox(height: 20),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         // the login button
                         MaterialButton(
                           minWidth: double.infinity,
-                          height: 30,
+                          height: 40,
                           onPressed: () {
                             Navigator.push(
                                 context,
@@ -105,10 +109,10 @@ class _GP_HomeState extends State<GP_Home> {
                                 fontSize: 18),
                           ),
                         ),
-
+                        const SizedBox(height: 20),
                         MaterialButton(
                           minWidth: double.infinity,
-                          height: 30,
+                          height: 40,
                           onPressed: () {
                             Navigator.push(
                                 context,

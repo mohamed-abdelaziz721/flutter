@@ -13,83 +13,7 @@ class VideoCaptionGIF extends StatefulWidget {
 }
 
 class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
-  List<String> stopWords = [
-    'wasn',
-    'wouldn',
-    'be',
-    'has',
-    'that',
-    'does',
-    'shouldn',
-    "you've",
-    'for',
-    "didn't",
-    'm',
-    'ain',
-    'haven',
-    "weren't",
-    'are',
-    "she's",
-    "wasn't",
-    'its',
-    "haven't",
-    "wouldn't",
-    'don',
-    'weren',
-    's',
-    "you'd",
-    "don't",
-    'doesn',
-    "hadn't",
-    'is',
-    'was',
-    "that'll",
-    "should've",
-    'a',
-    'then',
-    'the',
-    'mustn',
-    'nor',
-    'as',
-    'it\'s',
-    "needn't",
-    'd',
-    'am',
-    'have',
-    'hasn',
-    'o',
-    "aren't",
-    "you'll",
-    "couldn't",
-    "you're",
-    "mustn't",
-    'didn',
-    "doesn't",
-    'll',
-    'an',
-    'hadn',
-    'whom',
-    'y',
-    "hasn't",
-    'itself',
-    'couldn',
-    'needn',
-    "shan't",
-    'isn',
-    "shouldn't",
-    'aren',
-    'being',
-    'were',
-    'did',
-    'ma',
-    't',
-    'having',
-    'mightn',
-    've',
-    'oh,',
-    "won't",
-    'too.',
-    "it’s"
+  List<String> stopWords = ['wasn', 'wouldn', 'be', 'has', 'that', 'does', 'shouldn', "you've", 'for', "didn't", 'm', 'ain', 'haven', "weren't", 'are', "she's", "wasn't", 'its', "haven't", "wouldn't", 'don', 'weren', 's', "you'd", "don't", 'doesn', "hadn't", 'is', 'was', "that'll", "should've", 'a', 'then', 'the', 'mustn', 'nor', 'as', 'it\'s', "needn't", 'd', 'am', 'have', 'hasn', 'o', "aren't", "you'll", "couldn't", "you're", "mustn't", 'didn', "doesn't", 'll', 'an', 'hadn', 'whom', 'y', "hasn't", 'itself', 'couldn', 'needn', "shan't", 'isn', "shouldn't", 'aren', 'being', 'were', 'did', 'ma', 't', 'having', 'mightn', 've', 'oh,', "won't", 'too.', "it’s"
   ];
 
   late YoutubePlayerController _controller;
@@ -98,10 +22,13 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
   Tokenizer t = Tokenizer();
 
   String cc = "";
-  late String gif;
+  String gif = 'assets/welcome.gif';
   bool _isLoading = false;
 
   Future<void> getCaption(String id) async {
+
+    await Future.delayed(Duration(milliseconds: 5000));
+
     final yt = YoutubeExplode();
     var manifest = await yt.videos.closedCaptions.getManifest(widget.id);
     var trackInfo = manifest.getByLanguage('en');
@@ -117,15 +44,17 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
 
         // captions = track.toJson();
 
+
         for (var e in track.captions) {
+          List<String> tmp_words = [];
+          List<String> lemmas = [];
           String sen = e.text;
           print(sen);
           // int offset = e.offset.inSeconds; //time offset
           // int end = e.end.inSeconds; //Time at which this caption ends being displayed.
-          int duration = e.duration.inMilliseconds;
-          List<String> tmp_words = [];
+          int duration = e.duration.inMilliseconds ;
+
           tmp_words = t.tokenize(sen.toLowerCase());
-          List<String> lemmas = [];
 
           for (String w in tmp_words) {
             if (!(stopWords.contains(w))) {
@@ -143,7 +72,7 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
               await Future.delayed(Duration(
                   milliseconds: (duration / tmp_words.length).toInt()));
             }
-            await Future.delayed(Duration(milliseconds: 400));
+            await Future.delayed(Duration(milliseconds: 445));
           }
           // print(lemmas);
           // print(lemmas.join(" "));
@@ -155,10 +84,20 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
     // return track.captions;
   }
 
+
+  Future<void> Sync(String id) async {
+    _controller.play();
+    await getCaption(widget.id);
+
+  }
+
   @override
   void initState() {
     super.initState();
     _isLoading = true;
+
+    // getCaption(widget.id);
+
     _controller = YoutubePlayerController(
       initialVideoId: widget.id,
       flags: YoutubePlayerFlags(
@@ -168,10 +107,12 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
         enableCaption: true,
       ),
     );
-
-    getCaption(widget.id);
     _isLoading = false;
+
+
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -192,13 +133,17 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
                   minWidth: double.infinity,
                   height: 30,
                   onPressed: () {
+                    // Sync(widget.id);
+                    // play video
+
+                    _controller.play();
                     getCaption(widget.id);
                   },
                   color: const Color(0xff0095FF),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(50)),
                   child: const Text(
-                    "Get Caption",
+                    "Get Caption and Play video",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
@@ -224,6 +169,8 @@ class _VideoCaptionGIFState extends State<VideoCaptionGIF> {
                 ),
                 Expanded(
                     child: Container(
+                        width: 300,
+                        height: 200,
                         alignment: Alignment.center,
                         child: Image(
                           image: AssetImage('assets/$gif.gif'),
