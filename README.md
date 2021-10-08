@@ -15,6 +15,14 @@
 </p>
 
 
+## Project Description \& Demos
+
+## Project Tools
+
+## Problems Encountered 
+
+
+
 
 
 
@@ -39,7 +47,7 @@ on implementations from the UI to the API handling. A complete list of tasks wit
 
 |  # |                                       Java                                      |          Status          |
 |:--:|:----------------------------------------------------------------------------------------:|:------------------------:|
-| 01 | [LoginForm Design with Linear Layout](https://github.com/mohamed-abdelaziz721/Login-Form) |    :heavy_check_mark:    |
+| 01 | [LoginForm  with Linear Layout](https://github.com/mohamed-abdelaziz721/Login-Form) |    :heavy_check_mark:    |
 | 02 |          [Relative Layout](https://github.com/mohamed-abdelaziz721/Relative-Layout)          |    :heavy_check_mark:    |
 | 03 |          [Constraint Layout](https://github.com/mohamed-abdelaziz721/Constraint-Layout)              |    :heavy_check_mark:    |
 | 04 | [Navigation Throught Activities](https://github.com/mohamed-abdelaziz721/Navigation-Throught-Activities)              |    :heavy_check_mark:    |
@@ -61,9 +69,12 @@ However, you can apply the concepts of the projects with any other preferred pro
 
 
 ## Supervision
-> Eng. Omar Sherif - Sprints - NAID
-> Eng. Nourhan Gehad - Sprints - NAID
-> Eng. Mohamed Hefney - Sprints - NAID
+Sprints - NAID
+> Eng. Omar Sherif
+> 
+> Eng. Nourhan Gehad 
+> 
+> Eng. Mohamed Hefney 
 
 
 
