@@ -6,6 +6,9 @@ import 'package:sprints_naid_flutter/projects/page_navigation/utils/user_prefere
 import 'package:sprints_naid_flutter/themes.dart';
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 
+
+// @dart=2.9
+
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([

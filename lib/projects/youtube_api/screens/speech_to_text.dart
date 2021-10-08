@@ -20,7 +20,7 @@ class _AudioScreenState extends State<AudioScreen> {
 
   Lemmatizer lemmatizer = new Lemmatizer();
   Tokenizer t = Tokenizer();
-  late String gif;
+   String gif ='assets/welcome.gif';
 
 
   @override
@@ -86,8 +86,8 @@ class _AudioScreenState extends State<AudioScreen> {
                 ),
               ),
                 Container(alignment: Alignment.center,
-                  height: 250,
-                  width: 250,
+                  height: 200,
+                  width: 300,
                   child: gif != null
                       ? Image(
                     image: AssetImage('assets/$gif.gif'), fit: BoxFit.fill,)
