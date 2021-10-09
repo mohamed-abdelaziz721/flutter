@@ -80,7 +80,10 @@ This will make online media accessible to people with hearing impairment.
 - play and pause generated sign language.
 
 
-
+## Project Build apk 
+```dart
+flutter build apk --release --no-sound-null-safety
+```
 
 
 
